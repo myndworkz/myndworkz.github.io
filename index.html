@@ -4,16 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Virtual Card</title>
+    <style>
+        /* Basic reset */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+
+        a:hover {
+            color: #ff6347;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .download-vcard {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #1e90ff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .download-vcard:hover {
+            background-color: #ff6347;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dr Bryn Rhys Williams</h1>
-    <p>Email: <a href="mailto:bryn.williams@myndworkz.uk">bryn.williams@myndworkz.uk</a></p>
+    <div class="card">
+        <h1>Dr Bryn Rhys Williams</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:bryn.williams@myndworkz.uk">bryn.williams@myndworkz.uk</a></p>
     <p>Phone ch: <a href="tel:+41772183196">+41772183196</a></p>
 	<p>Phone uk: <a href="tel:+447925877352">+447925877352</a></p>
     <p>Website: <a href="https://www.myndworkz.uk">https://www.myndworkz.uk</a></p>
-    <p><a href="https://myndworkz.github.io/myndworkz.vcf">Download my vCard</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/myndworkz">https://linkedin.com/in/myndworkz</a></p>
+        </div>
+        
+        <div class="social-links">
+                <p>LinkedIn: <a href="https://linkedin.com/in/myndworkz">https://linkedin.com/in/myndworkz</a></p>
     <p>Threads/Instagram: <a href="https://instagram.com/myndworkz">@myndworkz</a></p>
+        </div>
 
+        <!-- Download vCard button -->
+        <a class="download-vcard" href="https://myndworkz.github.io/myvcard.vcf">Download my vCard</a>
+    </div>
 </body>
 </html>
